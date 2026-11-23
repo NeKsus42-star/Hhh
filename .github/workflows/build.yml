@@ -28,7 +28,7 @@ jobs:
 
       - name: Build JAR
         working-directory: jojostands
-        run: ./gradlew --no-daemon --stacktrace setupCiWorkspace build
+        run: ./gradlew --no-daemon setupCiWorkspace build
 
       - uses: actions/upload-artifact@v4
         with:
