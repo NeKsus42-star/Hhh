@@ -21,6 +21,7 @@ jobs:
           unzip -q jojostands-mod.zip
           sed -i "s#net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT#com.anatawa12.forge:ForgeGradle:2.3-1.0.+#" jojostands/build.gradle
           sed -i "s#jcenter()#mavenCentral()#g" jojostands/build.gradle
+          sed -i "s#1.12.2-14.23.5.2860#1.12.2-14.23.5.2847#" jojostands/build.gradle
           curl -L --fail -o mdk.zip https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2860/forge-1.12.2-14.23.5.2860-mdk.zip
           unzip -q mdk.zip -d mdk
           cp -r mdk/gradle mdk/gradlew jojostands/
